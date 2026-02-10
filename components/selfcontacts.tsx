@@ -1,6 +1,6 @@
 "use client"
 import { useAppContext } from "@/context/contexts"
-import { useState } from "react"
+import { useState, ReactNode } from "react"
 
 type ContactInfo = {
   email: string
@@ -9,8 +9,8 @@ type ContactInfo = {
 }
 
 type ContactSectionProps = {
-  heading?: string
-  description?: string
+  heading?: ReactNode   // <-- allow JSX
+  description?: ReactNode // <-- allow JSX
   contactInfo: ContactInfo
 }
 
@@ -49,9 +49,11 @@ export const Selfcontacts = ({ heading, description, contactInfo }: ContactSecti
         <h2 className={`mb-5 text-center ${mblview ? "text-3xl" : "text-5xl"} ${cardText}`}>
           {heading}
         </h2>
-        <p className={`text-center ${mblview ? "text-base px-4" : "text-lg"} max-w-3xl mx-auto ${cardText}`}>
-          {description}
-        </p>
+        {description && (
+          <p className={`text-center ${mblview ? "text-base px-4" : "text-lg"} max-w-3xl mx-auto ${cardText}`}>
+            {description}
+          </p>
+        )}
       </div>
 
       <div className={`grid ${mblview ? "grid-cols-1 gap-8 p-5" : "p-15 grid-cols-2 gap-12"}`}>
@@ -63,7 +65,7 @@ export const Selfcontacts = ({ heading, description, contactInfo }: ContactSecti
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
             <div>
-              <h3 className={`text-xl ${darkState? "text-white":"text-black"}`}>
+              <h3 className={`text-xl ${darkState ? "text-white" : "text-black"}`}>
                 Email
                 <p className={`text-lg  ${cardText}`}>{contactInfo.email}</p>
               </h3>
@@ -76,7 +78,7 @@ export const Selfcontacts = ({ heading, description, contactInfo }: ContactSecti
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
             <div>
-              <h3 className={`text-xl ${darkState? "text-white":"text-black"}`}>
+              <h3 className={`text-xl ${darkState ? "text-white" : "text-black"}`}>
                 Phone
                 <p className={`text-lg ${cardText}`}>{contactInfo.phone}</p>
               </h3>
@@ -90,7 +92,7 @@ export const Selfcontacts = ({ heading, description, contactInfo }: ContactSecti
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
             <div>
-              <h3 className={`text-xl ${darkState? "text-white":"text-black"}`}>
+              <h3 className={`text-xl ${darkState ? "text-white" : "text-black"}`}>
                 Location
                 <p className={`text-lg ${cardText}`}>{contactInfo.location}</p>
               </h3>
