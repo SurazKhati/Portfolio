@@ -86,53 +86,73 @@ export default function Home() {
 
       {/* Skills Section */}
       <section id="Skills" className="py-12 bg-gray-900">
-        {/* TECHNICAL SKILLS Heading */}
         <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 text-center mb-8 animate-pulse">
           TECHNICAL SKILLS
         </h2>
 
         <TechnicalSkills
-          heading=""
-          description="Strong foundation in full-stack web development with experience building scalable, user-focused applications."
-          categories={[
-            {
-              icon: "code",
-              title: "Programming Languages",
-              color: "text-blue-400",
-              skills: ["JavaScript", "TypeScript", "Python", "SQL"],
-            },
-            {
-              icon: "javascript",
-              title: "Frontend Technologies",
-              color: "text-blue-400",
-              skills: ["React.js", "Next.js", "Vanilla JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
-            },
-            {
-              icon: "backend",
-              title: "Backend Technologies",
-              color: "text-blue-400",
-              skills: ["Node.js", "Express.js"],
-            },
-            {
-              icon: "database",
-              title: "Databases",
-              color: "text-blue-400",
-              skills: ["MongoDB", "PostgreSQL", "MySQL"],
-            },
-            {
-              icon: "ai",
-              title: "AI",
-              color: "text-blue-400",
-              skills: ["Jupyter Notebook", "Pandas", "Numpy", "Data Analysis", "Data Visualization"],
-            },
-            {
-              icon: "tools",
-              title: "Tools & Core Concepts",
-              color: "text-blue-400",
-              skills: ["REST APIs", "JWT Authentication", "Role-Based Access Control", "CRUD Operations", "Git & GitHub", "Data Structures & Algorithms"],
-            },
-          ]}
-        />
+  heading=""
+  description="Strong foundation in full-stack web development with experience building scalable, user-focused applications."
+  categories={[
+    {
+      icon: "code",
+      title: "Programming Languages",
+      color: "text-blue-400",
+      skills: ["JavaScript", "TypeScript", "Python", "SQL"],
+    },
+    {
+      icon: "javascript",
+      title: "Frontend Technologies",
+      color: "text-blue-400",
+      skills: [
+        "React.js",
+        "Next.js",
+        "Vanilla JavaScript",
+        "Tailwind CSS",
+        "HTML5",
+        "CSS3",
+      ],
+    },
+    {
+      icon: "backend",
+      title: "Backend Technologies",
+      color: "text-blue-400",
+      skills: ["Node.js", "Express.js"],
+    },
+    {
+      icon: "database",
+      title: "Databases",
+      color: "text-blue-400",
+      skills: ["MongoDB", "PostgreSQL", "MySQL"],
+    },
+    {
+      icon: "ai",
+      title: "AI",
+      color: "text-blue-400",
+      skills: [
+        "Jupyter Notebook",
+        "Pandas",
+        "NumPy",
+        "Data Analysis",
+        "Data Visualization",
+      ],
+    },
+    {
+      icon: "tools",
+      title: "Tools & Core Concepts",
+      color: "text-blue-400",
+      skills: [
+        "REST APIs",
+        "JWT Authentication",
+        "Role-Based Access Control",
+        "CRUD Operations",
+        "Git & GitHub",
+        "Data Structures & Algorithms",
+      ],
+    },
+  ]}
+/>
+
       </section>
 
       {/* Projects Section */}
@@ -144,14 +164,14 @@ export default function Home() {
       <section id="Contacts" className="py-12 bg-gray-900">
         <Selfcontacts
           heading={
-            <h2
-              className="text-4xl font-extrabold text-center mb-6 text-red-500 animate-pulse"
+            <span
+              className="block text-4xl font-extrabold text-center mb-6 text-red-500 animate-pulse"
               style={{
                 textShadow: "0 0 10px #ff0000, 0 0 20px #ff4d4d, 0 0 30px #ff6666",
               }}
             >
               Let's Work Together
-            </h2>
+            </span>
           }
           description="Ready to build scalable, intelligent applications? Let's collaborate — combining full-stack development and AI/ML to achieve your project goals."
           contactInfo={{

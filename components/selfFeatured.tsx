@@ -38,7 +38,7 @@ export const SelfFeatured = ({ projects }: { projects: Project[] }) => {
 
       <div className={`grid grid-cols-1 mdg:grid-cols-2 lg:grid-cols-3 gap-10 ${darkState ? "bg-black": "bg-white"}`}>
         {projects.map((prj, idx) => (
-          <a href="https://github.com/sandesh3322" target="_blank" className="cursor-pointer" key={idx}>
+          <a href="https://github.com/SurazKhati" target="_blank" className="cursor-pointer" key={idx}>
             <div
               className={`border rounded
                 ${darkState ? "bg-neutral-900 border-neutral-700" : "bg-white border-gray-600"}
