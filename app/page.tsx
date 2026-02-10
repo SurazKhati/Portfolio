@@ -99,7 +99,7 @@ export default function Home() {
   
   return (
     <div >
-      <Navbar title="Sandesh Poudel" options={["Home","Skills","Projects","Contacts"]}/>
+      <Navbar title="Sura Khati" options={["Home","Skills","Projects","Contacts"]}/>
       
       {/* Home Section - Add id="Home" */}
       <section id="Home" className="w-full overflow-x-hidden">
@@ -110,10 +110,10 @@ export default function Home() {
             { value: "100%", label: "ClientSatisfaction" },
           ]}  
           batchtxt=""  
-          title="Hello, I'm Sandesh Poudel" 
-          subtext="Junior Software Engineer crafting digital experiences with MERN stack development" 
-          description="Specializing in full-stack development, DevOps practices, and scalable solutions that drive business growth."
-          image="./profile.png"  
+          title="Hello, I'm Suraj Khati" 
+          subtext="Junior Software Engineer | MERN Stack Developer | AI/ML Enthusiast" 
+          description="Specializing in full-stack MERN development and AI/ML-driven solutions that create scalable, impactful digital products."
+          image="./pp.png"  
         />
 
        <Scroll />
@@ -123,8 +123,8 @@ export default function Home() {
     
       <section id="Skills">
   <TechnicalSkills
-    heading="Technical Skills"
-    description="Strong foundation in full-stack web development with hands-on experience building scalable applications, interactive user interfaces, and real-world applications."
+    heading="TECHNICAL SKILLS"
+    description="Strong foundation in full-stack web development with experience building scalable, user-focused applications."
     categories={[
       {
         icon: "code",
@@ -134,7 +134,6 @@ export default function Home() {
           "TypeScript",
           "Python",
           "SQL",
-          "PHP",
         ],
       },
       {
@@ -168,11 +167,13 @@ export default function Home() {
       },
       {
         icon: "ai",
-        title: "Computer Vision & AI",
+        title: "AI",
         skills: [
-          "OpenCV",
-          "Hand Tracking",
-          "Real-Time Processing",
+          "Jupyter Notebook",
+          "Pandas",
+          "Numpy",
+          "Data Analysis",
+          "Data Visualization",
         ],
       },
       {
@@ -203,10 +204,10 @@ export default function Home() {
       <section id="Contacts">
         <Selfcontacts
           heading="Let's Work Together"
-          description="Ready to bring your next project to life? Let's discuss how my expertise in full-stack development can help achieve your goals."
+          description="Ready to build scalable, intelligent applications? Let’s collaborate — combining full-stack development and AI/ML to achieve your project goals."
           contactInfo={{
-            email: "sandezpoudel@gmail.com",
-            phone: "+977-9869865250",
+            email: "surazkhati135@gmail.com",
+            phone: "+977-9864638141",
             location: "Available for Remote Work | Kathmandu, Nepal"
           }}
         />

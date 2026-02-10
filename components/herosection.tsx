@@ -35,7 +35,7 @@ export const HeroSection = ({
   }
 
   const viewmywork = () => {
-    window.location.assign("https://github.com/sandesh3322")
+    window.location.assign("https://github.com/SurazKhati")
   }
 
   const handleEmail = () => {
@@ -101,7 +101,7 @@ export const HeroSection = ({
           </div>
 
           <div className={`flex items-baseline pt-7 ${mblview ? "justify-center" : ""}`}>
-            <a href="https://github.com/sandesh3322">
+            <a href="https://github.com/SurazKhati">
               <img
                 src="./github.png"
                 className="inline-block w-16 h-16 m-4 rounded-full object-cover hover:cursor-pointer"
@@ -109,7 +109,7 @@ export const HeroSection = ({
               />
             </a>
 
-            <a href="https://www.linkedin.com/in/sandesh-poudel-0b1470214/">
+            <a href="https://www.linkedin.com/in/surajkhati/">
               <img
                 src="./linkedin.png"
                 className="inline-block w-16 h-16 m-4 rounded-full object-cover hover:cursor-pointer"

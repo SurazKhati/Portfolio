@@ -10,12 +10,12 @@ export const Footer = () => {
 
   return (
     <div className={`${bgClass} text-center p-4`}>
-      <p className={`text-l m-3 ${mainText}`}>Sandesh Poudel</p>
+      <p className={`text-l m-3 ${mainText}`}>Suraj Khati</p>
       <p className={`text-l m-3 ${subText}`}>
         Junior Software Engineer | Full-Stack MERN Developer | AI Enthusiast
       </p>
       <p className={`text-sm m-3 ${subText}`}>
-        © 2025 Sandesh Poudel. All rights reserved.
+        © 2025 Suraj Khati. All rights reserved.
       </p>
     </div>
   )
