@@ -113,11 +113,10 @@ export default function Home() {
       </section>
 
       {/* Skills Section - Add id="Skills" */}
-<section id="Skills">
+    
+      <section id="Skills">
   <TechnicalSkills
-    heading={
-      <h2 className="glow-red">Technical Skills</h2>
-    }
+    heading="Technical Skills"
     description="Strong foundation in full-stack web development with hands-on experience building scalable applications, interactive user interfaces, and real-world applications."
     categories={[
       {
@@ -184,7 +183,6 @@ export default function Home() {
     ]}
   />
 </section>
-
 
       <section id="Projects">
         <SelfFeatured projects={projects} />

@@ -23,31 +23,3 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.glow-red {
-  color: red;
-  text-align: center; /* optional, center the heading */
-  font-size: 2.5rem; /* optional, adjust as needed */
-  text-shadow: 
-    0 0 5px #ff0000,
-    0 0 10px #ff0000,
-    0 0 20px #ff0000,
-    0 0 40px #ff0000;
-  animation: glow 1.5s infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 
-      0 0 5px #ff0000,
-      0 0 10px #ff0000,
-      0 0 20px #ff0000,
-      0 0 40px #ff0000;
-  }
-  to {
-    text-shadow: 
-      0 0 10px #ff4d4d,
-      0 0 20px #ff4d4d,
-      0 0 30px #ff4d4d,
-      0 0 50px #ff4d4d;
-  }
-}
