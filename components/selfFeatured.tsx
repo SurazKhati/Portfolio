@@ -17,13 +17,23 @@ export const SelfFeatured = ({ projects }: { projects: Project[] }) => {
   return (
     <div className={`px-6  md:px-12 ${darkState ? "bg-black": "bg-white"}` }>
       
-        <h3
-          className={`text-center ${
-            darkState ? "text-white bg-black" : "text-black "
-          } ${mblview ? "text-xl " : "text-4xl "} p-16`}
-        >
-          Featured Projects
-        </h3>
+       <h3
+  className={`text-center p-16 font-extrabold ${
+    mblview ? "text-xl" : "text-4xl"
+  } ${
+    darkState
+      ? "text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400"
+      : "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-green-400 to-orange-400"
+  } animate-pulse`}
+  style={{
+    textShadow: darkState
+      ? "0 0 10px #ff00ff, 0 0 20px #00ffff"
+      : "0 0 10px #00ffff, 0 0 20px #ff9900",
+  }}
+>
+  Featured Projects
+</h3>
+
       
 
       <div className={`grid grid-cols-1 mdg:grid-cols-2 lg:grid-cols-3 gap-10 ${darkState ? "bg-black": "bg-white"}`}>
