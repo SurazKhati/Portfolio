@@ -61,15 +61,18 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Navbar */}
-      <Navbar title="Suraj Khati" options={["Home", "Skills", "Projects", "Contacts"]} />
+      <Navbar
+        title="Suraj Khati"
+        options={["Home", "Skills", "Projects", "Contacts"]}
+      />
 
       {/* Home Section */}
       <section id="Home" className="w-full overflow-x-hidden">
         <HeroSection
           stats={[
             { value: "50+", label: "Projects" },
-            { value: "5+", label: "YearsExp." },
-            { value: "100%", label: "ClientSatisfaction" },
+            { value: "5+", label: "Years Exp." },
+            { value: "100%", label: "Client Satisfaction" },
           ]}
           batchtxt=""
           title={
@@ -79,80 +82,66 @@ export default function Home() {
           }
           subtext="Junior Software Engineer | MERN Stack Developer | AI/ML Enthusiast"
           description="Specializing in full-stack MERN development and AI/ML-driven solutions that create scalable, impactful digital products."
-          image="./pp.png"
+          image="/pp.png"
         />
         <Scroll />
       </section>
 
       {/* Skills Section */}
       <section id="Skills" className="py-12 bg-gray-900">
-        <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 text-center mb-8 animate-pulse">
+        <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 text-center mb-8">
           TECHNICAL SKILLS
         </h2>
 
         <TechnicalSkills
-  heading=""
-  description="Strong foundation in full-stack web development with experience building scalable, user-focused applications."
-  categories={[
-    {
-      icon: "code",
-      title: "Programming Languages",
-      color: "text-blue-400",
-      skills: ["JavaScript", "TypeScript", "Python", "SQL"],
-    },
-    {
-      icon: "javascript",
-      title: "Frontend Technologies",
-      color: "text-blue-400",
-      skills: [
-        "React.js",
-        "Next.js",
-        "Vanilla JavaScript",
-        "Tailwind CSS",
-        "HTML5",
-        "CSS3",
-      ],
-    },
-    {
-      icon: "backend",
-      title: "Backend Technologies",
-      color: "text-blue-400",
-      skills: ["Node.js", "Express.js"],
-    },
-    {
-      icon: "database",
-      title: "Databases",
-      color: "text-blue-400",
-      skills: ["MongoDB", "PostgreSQL", "MySQL"],
-    },
-    {
-      icon: "ai",
-      title: "AI",
-      color: "text-blue-400",
-      skills: [
-        "Jupyter Notebook",
-        "Pandas",
-        "NumPy",
-        "Data Analysis",
-        "Data Visualization",
-      ],
-    },
-    {
-      icon: "tools",
-      title: "Tools & Core Concepts",
-      color: "text-blue-400",
-      skills: [
-        "REST APIs",
-        "JWT Authentication",
-        "Role-Based Access Control",
-        "CRUD Operations",
-        "Git & GitHub",
-        "Data Structures & Algorithms",
-      ],
-    },
-  ]}
-/>
-
+          heading=""
+          description="Strong foundation in full-stack web development with experience building scalable, user-focused applications."
+          categories={[
+            {
+              icon: "code",
+              title: "Programming Languages",
+              color: "text-blue-400",
+              skills: ["JavaScript", "TypeScript", "Python", "SQL"],
+            },
+            {
+              icon: "javascript",
+              title: "Frontend Technologies",
+              color: "text-blue-400",
+              skills: ["React.js", "Next.js", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
+            },
+            {
+              icon: "backend",
+              title: "Backend Technologies",
+              color: "text-blue-400",
+              skills: ["Node.js", "Express.js"],
+            },
+            {
+              icon: "database",
+              title: "Databases",
+              color: "text-blue-400",
+              skills: ["MongoDB", "PostgreSQL", "MySQL"],
+            },
+            {
+              icon: "ai",
+              title: "AI / Data",
+              color: "text-blue-400",
+              skills: ["Jupyter Notebook", "Pandas", "NumPy", "Data Analysis", "Data Visualization"],
+            },
+            {
+              icon: "tools",
+              title: "Tools & Concepts",
+              color: "text-blue-400",
+              skills: [
+                "REST APIs",
+                "JWT Authentication",
+                "RBAC",
+                "CRUD Operations",
+                "Git & GitHub",
+                "DSA",
+              ],
+            },
+          ]}
+        />
       </section>
 
       {/* Projects Section */}
@@ -165,9 +154,9 @@ export default function Home() {
         <Selfcontacts
           heading={
             <span
-              className="block text-4xl font-extrabold text-center mb-6 text-red-500 animate-pulse"
+              className="block text-4xl font-extrabold text-center mb-6 text-red-500"
               style={{
-                textShadow: "0 0 10px #ff0000, 0 0 20px #ff4d4d, 0 0 30px #ff6666",
+                textShadow: "0 0 10px #ff0000, 0 0 20px #ff4d4d",
               }}
             >
               Let's Work Together
