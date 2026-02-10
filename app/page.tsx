@@ -40,11 +40,11 @@ export default function Home() {
     id: 3,
     title: "Lalitpur Shortest Path Visualizer (Dijkstra)",
     description:
-      "An interactive visualization of Dijkstra’s algorithm applied to Lalitpur’s road network, allowing users to select source and destination points and observe shortest-path computation step by step.",
+      "An interactive visualization of Dijkstra's algorithm applied to Lalitpur's road network, allowing users to select source and destination points and observe shortest-path computation step by step.",
     image: "/maps.jpg",
     tags: [
       "Data Structures & Algorithms",
-      "Dijkstra’s Algorithm",
+      "Dijkstra's Algorithm",
       "Graph Theory",
       "Pathfinding",
       "Visualization",
@@ -98,7 +98,7 @@ export default function Home() {
 
   
   return (
-    <div >
+    <div>
       <Navbar title="Sura Khati" options={["Home","Skills","Projects","Contacts"]}/>
       
       {/* Home Section - Add id="Home" */}
@@ -110,7 +110,11 @@ export default function Home() {
             { value: "100%", label: "ClientSatisfaction" },
           ]}  
           batchtxt=""  
-          title="Hello, I'm Suraj Khati" 
+          title={
+            <span className="bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent font-bold text-5xl md:text-7xl lg:text-8xl">
+              Hello, I'm Suraj Khati
+            </span>
+          } 
           subtext="Junior Software Engineer | MERN Stack Developer | AI/ML Enthusiast" 
           description="Specializing in full-stack MERN development and AI/ML-driven solutions that create scalable, impactful digital products."
           image="./pp.png"  
@@ -120,91 +124,87 @@ export default function Home() {
       </section>
 
       {/* Skills Section - Add id="Skills" */}
-    
       <section id="Skills">
-  <TechnicalSkills
-    heading="TECHNICAL SKILLS"
-    description="Strong foundation in full-stack web development with experience building scalable, user-focused applications."
-    categories={[
-      {
-        icon: "code",
-        title: "Programming Languages",
-        skills: [
-          "JavaScript",
-          "TypeScript",
-          "Python",
-          "SQL",
-        ],
-      },
-      {
-        icon: "javascript",
-        title: "Frontend Technologies",
-        skills: [
-          "React.js",
-          "Next.js",
-          "Vanilla JavaScript",
-          "Tailwind CSS",
-          "HTML5",
-          "CSS3",
-        ],
-      },
-      {
-        icon: "backend",
-        title: "Backend Technologies",
-        skills: [
-          "Node.js",
-          "Express.js",
-        ],
-      },
-      {
-        icon: "database",
-        title: "Databases",
-        skills: [
-          "MongoDB",
-          "PostgreSQL",
-          "MySQL",
-        ],
-      },
-      {
-        icon: "ai",
-        title: "AI",
-        skills: [
-          "Jupyter Notebook",
-          "Pandas",
-          "Numpy",
-          "Data Analysis",
-          "Data Visualization",
-        ],
-      },
-      {
-        icon: "tools",
-        title: "Tools & Core Concepts",
-        skills: [
-          "REST APIs",
-          "JWT Authentication",
-          "Role-Based Access Control",
-          "CRUD Operations",
-          "Git & GitHub",
-          "Data Structures & Algorithms",
-        ],
-      },
-    ]}
-  />
-</section>
-
+        <TechnicalSkills
+          heading="TECHNICAL SKILLS"
+          description="Strong foundation in full-stack web development with experience building scalable, user-focused applications."
+          categories={[
+            {
+              icon: "code",
+              title: "Programming Languages",
+              skills: [
+                "JavaScript",
+                "TypeScript",
+                "Python",
+                "SQL",
+              ],
+            },
+            {
+              icon: "javascript",
+              title: "Frontend Technologies",
+              skills: [
+                "React.js",
+                "Next.js",
+                "Vanilla JavaScript",
+                "Tailwind CSS",
+                "HTML5",
+                "CSS3",
+              ],
+            },
+            {
+              icon: "backend",
+              title: "Backend Technologies",
+              skills: [
+                "Node.js",
+                "Express.js",
+              ],
+            },
+            {
+              icon: "database",
+              title: "Databases",
+              skills: [
+                "MongoDB",
+                "PostgreSQL",
+                "MySQL",
+              ],
+            },
+            {
+              icon: "ai",
+              title: "AI",
+              skills: [
+                "Jupyter Notebook",
+                "Pandas",
+                "Numpy",
+                "Data Analysis",
+                "Data Visualization",
+              ],
+            },
+            {
+              icon: "tools",
+              title: "Tools & Core Concepts",
+              skills: [
+                "REST APIs",
+                "JWT Authentication",
+                "Role-Based Access Control",
+                "CRUD Operations",
+                "Git & GitHub",
+                "Data Structures & Algorithms",
+              ],
+            },
+          ]}
+        />
+      </section>
 
       {/* Projects Section - Add id="Projects" */}
-     
       <section id="Projects">
         <SelfFeatured projects={projects} />
       </section>
 
       {/* Contacts Section - Add id="Contacts" */}
-     
       <section id="Contacts">
         <Selfcontacts
           heading="Let's Work Together"
-          description="Ready to build scalable, intelligent applications? Let’s collaborate — combining full-stack development and AI/ML to achieve your project goals."
+          description="Ready to build scalable, intelligent applications? Let's collaborate — combining full-stack development and AI/ML to achieve your project goals."
           contactInfo={{
             email: "surazkhati135@gmail.com",
             phone: "+977-9864638141",
