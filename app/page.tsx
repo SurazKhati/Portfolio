@@ -25,6 +25,64 @@ export default function Home() {
       image: "/3d.png",
       tags: ["Computer Vision", "Hand Tracking", "3D"],
     },
+    {
+    id: 3,
+    title: "Lalitpur Shortest Path Visualizer (Dijkstra)",
+    description:
+      "An interactive visualization of Dijkstra’s algorithm applied to Lalitpur’s road network, allowing users to select source and destination points and observe shortest-path computation step by step.",
+    image: "/maps.jpg",
+    tags: [
+      "Data Structures & Algorithms",
+      "Dijkstra’s Algorithm",
+      "Graph Theory",
+      "Pathfinding",
+      "Visualization",
+    ],
+  },
+  {
+    id: 4,
+    title: "Advanced UI & Frontend Clones",
+    description:
+      "High-fidelity clones of modern web interfaces with a strong focus on responsiveness, smooth animations, reusable components, and clean frontend architecture.",
+    image: "/ui.png",
+    tags: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Frontend Development",
+    ],
+  },
+  {
+    id: 5,
+    title: "Full-Stack E-Commerce Clone",
+    description:
+      "A full-stack e-commerce application featuring product listings, cart management, user authentication, and order flow, designed to replicate real-world online shopping experiences.",
+    image: "/ecommerce.png",
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Authentication",
+      "REST APIs",
+    ],
+  },
+  {
+    id: 6,
+    title: "Multi-User Advanced CRUD System",
+    description:
+      "A role-based multi-user CRUD application with authentication and authorization, enabling secure creation, updating, and management of data for different user roles.",
+    image: "/crud.png",
+    tags: [
+      "CRUD Operations",
+      "Role-Based Access Control",
+      "JWT Authentication",
+      "React.js",
+      "Node.js",
+      "MongoDB",
+    ],
+  },
   ];
 
   return (
@@ -48,18 +106,85 @@ export default function Home() {
           stats={[
             { value: "50+", label: "Projects" },
             { value: "5+", label: "Years Exp." },
+            { value: "100%", label: "ClientSatisfaction" },
           ]}
         />
         <Scroll />
       </section>
 
-      <section id="Skills" className="py-12 bg-gray-900">
-        <TechnicalSkills
-          heading=""
-          description="Strong foundation in full-stack development and data-driven solutions."
-          categories={[]}
-        />
-      </section>
+      {/* Skills Section - Add id="Skills" */}
+<section id="Skills">
+  <TechnicalSkills
+    heading={
+      <h2 className="glow-red">Technical Skills</h2>
+    }
+    description="Strong foundation in full-stack web development with hands-on experience building scalable applications, interactive user interfaces, and real-world applications."
+    categories={[
+      {
+        icon: "code",
+        title: "Programming Languages",
+        skills: [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "SQL",
+          "PHP",
+        ],
+      },
+      {
+        icon: "javascript",
+        title: "Frontend Technologies",
+        skills: [
+          "React.js",
+          "Next.js",
+          "Vanilla JavaScript",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3",
+        ],
+      },
+      {
+        icon: "backend",
+        title: "Backend Technologies",
+        skills: [
+          "Node.js",
+          "Express.js",
+        ],
+      },
+      {
+        icon: "database",
+        title: "Databases",
+        skills: [
+          "MongoDB",
+          "PostgreSQL",
+          "MySQL",
+        ],
+      },
+      {
+        icon: "ai",
+        title: "Computer Vision & AI",
+        skills: [
+          "OpenCV",
+          "Hand Tracking",
+          "Real-Time Processing",
+        ],
+      },
+      {
+        icon: "tools",
+        title: "Tools & Core Concepts",
+        skills: [
+          "REST APIs",
+          "JWT Authentication",
+          "Role-Based Access Control",
+          "CRUD Operations",
+          "Git & GitHub",
+          "Data Structures & Algorithms",
+        ],
+      },
+    ]}
+  />
+</section>
+
 
       <section id="Projects">
         <SelfFeatured projects={projects} />
